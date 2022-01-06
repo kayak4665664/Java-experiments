@@ -23,26 +23,26 @@ Time: 2020 Spring Semester
 （1）创建一个`MyValue`类的对象`myValue`  
 （2）为`myValue`对象中的`value`域赋值`10`  
 （3）使用`getValue()`方法获得`myValue`对象中的数据并将它们打印在屏幕上  
-``` java
-class MyValue  
-{  
-    private int value;  
-    public void setValue(int x)  
+    ``` java
+    class MyValue  
     {  
-        Value=x;  
+        private int value;  
+        public void setValue(int x)  
+        {  
+            Value=x;  
+        }  
+        public int getValue()  
+        {  
+            Returen value;  
+        }  
     }  
-    public int getValue()  
+    public class UseValue  
     {  
-        Returen value;  
+        public static void main(String args[])  
+        {  
+        }  
     }  
-}  
-public class UseValue  
-{  
-    public static void main(String args[])  
-    {  
-    }  
-}  
-```
+    ```
 2. 编写Java代码实现一个计数器类`Counter`, 其中包含：  
   域`counterValue`用来保存计数器的当前数值  
   方法`increment()`, 计数器加一  
@@ -90,15 +90,15 @@ public class UseValue
 
 ## 7
 1. 在图形界面中绘制二维的坐标系统，其中`x`轴位于绘图区正中，`y`轴位于绘图区的最左边。
-2. 根据下面试验数据，在1）题的坐标系统中绘制数据点，每个数据点用一个小叉号表示，并在叉号边以（x，y）的格式标示出数据点的坐标数值，最后用折线连接相邻的数据点。  
-```
-数据点序号            x坐标              y坐标  
-4	                0                  20  
-5	                50                 -30  
-3                   100                16  
-6	                150                126  
-5	                200                164  
-```
+    2. 根据下面试验数据，在1）题的坐标系统中绘制数据点，每个数据点用一个小叉号表示，并在叉号边以（x，y）的格式标示出数据点的坐标数值，最后用折线连接相邻的数据点。  
+    ```
+    数据点序号            x坐标              y坐标  
+    4	                0                  20  
+    5	                50                 -30  
+    3	                100                16  
+    6	                150                126  
+    5	                200                164  
+    ```
 3. 在2）题的基础上设计界面接收用户输入的实验数据，绘制数据点和实验曲线。
 4. 编写程序跟踪用户的鼠标，并时刻把鼠标的位置显示出来。
 5. 编写图形界面的Java程序响应鼠标单击和键盘事件，从鼠标单击的位置开始横向显示用户键入的字符，若鼠标双击则清空屏幕。
